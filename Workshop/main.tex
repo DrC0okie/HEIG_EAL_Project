@@ -1,0 +1,54 @@
+\documentclass[a4paper]{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage[a4paper, margin=1.5cm, footskip=18.3pt]{geometry}
+\setlength{\parindent}{0pt}
+%\title{HEIG-VD --- EAL 2024 --- Groupe \textit{"Groupe"}}
+
+\title{
+    Difficulté de garantir la licéité d'un test de sécurité \\
+    \large HEIG-VD --- EAL 2024 --- Groupe \textit{"Groupe"}}
+
+\author{
+    Van Hove, Mangold, Strefeler, Gillet, Auberson\\
+}
+
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section*{Résumé de l'article}
+
+L'article discute le cas d'une femme ayant utilisé le mot de passe Gmail de son ex-époux, trouvé dans leur ancien logement conjugal, pour accéder à ses emails et données privées. Le Tribunal fédéral a jugé que cet acte constituait un accès indu à un système informatique, violant l'article 143bis du Code pénal. Malgré les conseils juridiques qu'elle a reçus, elle a été condamnée, car elle ne pouvait pas invoquer l'erreur sur l'illicéité de ses actions.
+
+\section*{Consultations et avis}
+
+L'ex-épouse a consulté plusieurs sources pour se rassurer de la licéité de ses actions :
+\begin{itemize}
+  \item Son beau-frère, procureur général, qui a mal informé sur la licéité de l'accès au compte.
+  \item Recherches sur Internet sur les lois relatives à l'accès non autorisé aux comptes emails.
+  \item Consultation d'un avocat qui n'a pas dissuadé son action.
+\end{itemize}
+
+Ces consultations n'ont pas été bénéfiques lors du jugement. Malgré leur apparence rassurante, ils étaient soit basés sur des suppositions, soit pas assez informés pour constituer une base juridique justifiant ses actions. Ça met en avant l'importance de recevoir des conseils juridiques non seulement de sources fiables, mais aussi complets et adaptés à la situation. Les avis informels ou les recherches superficielles peuvent mener à une mauvaise compréhension de la loi, menant à des actions illégales.
+
+
+\section*{Revendications et décisions du tribunal}
+
+L'ex-épouse a invoqué l'erreur sur l'illicéité, mentionnant qu'elle croyait agir légalement en utilisant le mot de passe trouvé. L'erreur sur l'illicéité, peut être invoquée lorsqu'une personne agit sous l'impression que son comportement n'est pas illégal. Cependant, pour que cette défense soit acceptée, il faut que l'erreur soit considérée comme inévitable, c'est-à-dire que la personne ne pouvait ni savoir ni devoir savoir que son action était illicite. 
+
+Dans ce cas, l'ex-épouse s'était renseignée auprès de plusieurs sources, y compris deux professionnels du droit. Malgré ses consultations, le Tribunal a estimé qu'elle aurait dû poursuivre ses recherches ou demander des éclaircissements, étant donné que ses sources  n'avaient pas apporté de réponses concluantes et que son doute persistait.
+
+Le Tribunal a donc rejeté sa défense, soulignant qu'une personne dans sa situation aurait dû savoir que l'accès à l'email de son ex-époux sans son consentement était probablement illicite.
+
+
+\section*{Recommandations pour un développeur}
+
+Pour un développeur souhaitant installer un accès SSH sur un serveur web client, il est impoertant d'obtenir un consentement explicite et documenté du client. Ça inclut des détails précis sur les conditions et les limites d'accès pour éviter toute violation de la sécurité ou des lois similaires à l'article 143bis CP.
+
+\section*{Recommandations pour un ingénieur en sécurité}
+
+Pour un ingénieur en sécurité qui trouve un mot de passe lors d'un test d'intrusion, il est impératif de ne pas l'utiliser sans autorisation explicite. L'ingénieur doit rapporter cette découverte au mandataire et recommander des mesures pour renforcer la sécurité, comme le changement immédiat du mot de passe et la sensibilisation à la sécurité des employés.
+
+\end{document}
